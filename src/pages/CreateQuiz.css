@@ -1,0 +1,132 @@
+/* Container for the create quiz form */
+.create-quiz {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffeb3b;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+/* Container for the question form */
+.question-form-container {
+  margin-bottom: 2rem;
+}
+
+/* Button to save the quiz */
+.save-quiz-button {
+  display: block;
+  width: 35%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+.save-quiz-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the question list */
+.question-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for each question item */
+.question-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.question-item:hover {
+  background-color: #dacfcf;
+  transform: scale(1.02);
+}
+
+/* Styling for the question text */
+.question-item span {
+  flex: 1;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Button to edit a question */
+.edit-button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+/* Button to delete a question */
+.delete-button {
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 600px) {
+  .create-quiz {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .save-quiz-button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .question-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+}

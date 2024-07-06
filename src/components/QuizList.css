@@ -1,0 +1,42 @@
+/* src/components/QuizList.css */
+
+/* Quiz list container */
+.quiz-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .quiz-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* Quiz card animation */
+.quiz-card {
+  background-color: #ea4335;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Quiz card content */
+.quiz-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.quiz-card p {
+  font-size: 1rem;
+  color: white;
+}

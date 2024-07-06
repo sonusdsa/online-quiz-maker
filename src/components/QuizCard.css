@@ -1,0 +1,73 @@
+/* Container styling for the quiz card */
+.quiz-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  padding: 1.5rem;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+}
+
+/* Hover effect for the quiz card */
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styling */
+.quiz-card h3 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph styling */
+.quiz-card p {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 1rem;
+}
+
+/* Container styling for the action buttons */
+.quiz-card-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Base styling for the buttons */
+.quiz-card-actions button {
+  padding: 0.75rem 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+/* Hover effect for the buttons */
+.quiz-card-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Active effect for the buttons */
+.quiz-card-actions button:active {
+  transform: scale(0.97);
+}
+
+/* Specific styling for the delete button */
+.quiz-card-actions .delete-button {
+  background-color: #dc3545;
+}
+
+/* Hover effect for the delete button */
+.quiz-card-actions .delete-button:hover {
+  background-color: #c82333;
+}

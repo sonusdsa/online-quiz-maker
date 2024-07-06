@@ -1,0 +1,128 @@
+/* General container styling */
+.take-quiz {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffeb3b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Heading styling */
+.take-quiz h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+/* Quiz container styling */
+.quiz-container {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  background-color: #34a853;
+}
+
+/* Question styling */
+.quiz-container h3 {
+  font-size: 1.5rem;
+  color: #444444;
+
+  text-align: center;
+}
+
+/* Button styling */
+.quiz-container button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #f1f1f1;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: left;
+  text-transform: none;
+}
+
+.quiz-container button:hover {
+  background-color: #e7e7e7;
+}
+
+.quiz-container button.selected {
+  background-color: #007bff;
+  color: #ffffff;
+  border-color: #007bff;
+}
+
+/* Navigation button styling */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.navigation-buttons button {
+  width: 20%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navigation-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Quiz result styling */
+.quiz-result {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.quiz-result h3 {
+  color: #333333;
+  margin-bottom: 4rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .take-quiz {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  .quiz-container h3 {
+    font-size: 1.25rem;
+  }
+
+  .quiz-container button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .navigation-buttons button {
+    width: 48%;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .quiz-result h3 {
+    font-size: 1.5rem;
+  }
+}
